@@ -15,9 +15,9 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neighbors import LocalOutlierFactor
 
 from .classifier import _IntentClassifier
-from ..InferSent.models import InferSent
+from ...InferSent.models import InferSent
 
-from ..six_intents.intent import Intent
+from ..intent import Intent
 
 
 class ProbabilisticClassifier(_IntentClassifier):

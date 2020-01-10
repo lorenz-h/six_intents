@@ -1,1 +1,1 @@
-from .six_intents import *
+from .six_intents import IntentParser

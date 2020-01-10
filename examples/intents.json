@@ -1,0 +1,49 @@
+{
+    "intents":[
+        {
+            "name": "TurnLightsOn",
+            "templates": [
+                "activate the lights in [location]",
+                "turn the lights on.",
+                "Turn on the lights in the [location]",
+                "give me some light in the [location] please",
+                "Can you light up the [location]?",
+                "switch the [location]'s lights on please"
+            ],
+            "slots": [
+                {
+                    "name": "location",
+                    "parser_type": "Room",
+                    "required": false
+                }
+            ],
+            "simple_reponses":[
+                "sure",
+                "turning the lights on.",
+                "no problem."
+            ]
+        },
+        {
+            "name": "SetTemperature",
+            "templates": [
+                "set the temperature in the [location] to [temperature] degrees",
+                "temperature [temperature] degrees in [location], please",
+                "set the temperature to [temperature]"
+               
+            ],
+            "slots": [
+                {
+                    "name": "location",
+                    "parser_type": "Room",
+                    "required": false
+                },
+                {
+                    "name": "temperature",
+                    "parser_type": "Temperature",
+                    "required": false
+                }
+            ]
+        }
+       
+    ]
+}

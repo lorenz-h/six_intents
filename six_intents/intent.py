@@ -5,6 +5,10 @@ import logging
 import json
 from typing import List, Any
 
+#FROM SIX PAPER:
+#try??
+#set the (?P<room>kitchen|hall|bedroom) lights to (?P<color>blue|yellow|red)
+
 
 class _Slot:
 
